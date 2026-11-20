@@ -5,7 +5,7 @@ Every team of 5 or 6 builds one research agent over two days. Day 1 is the engin
 Instructors give the team leader admin access to this repo. The leader's first task is to add the rest of the team as collaborators.
 
 1. Leader, first issue of the day: invite the other 4 or 5 members as collaborators with the Write role, not Admin. Each member accepts the invite, and the leader checks that everyone is listed under Settings, Collaborators and teams.
-2. Leader, same milestone: protect `main` so changes arrive only through a pull request with one approval. Required status checks are added in Day 1 Milestone 7.
+2. Leader, in Day 1 Milestone 7: protect `main` so changes arrive only through a pull request with one approval. Required status checks are added in that same milestone.
 
 Teams of 5 or 6 use these seats. In a team of 5, the Lead also covers QA and docs.
 

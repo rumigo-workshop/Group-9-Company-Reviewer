@@ -12,9 +12,7 @@ Day 1 is the engineering foundation. Core issues must finish. Stretch issues are
 | --- | --- | --- | --- | --- | --- |
 | 1.1 | Leader adds every teammate as a collaborator with Write access (Mission 2) | Lead | XS | core | Everyone can open the team repo and create a branch; the access list shows 1 Admin and 4 or 5 Write |
 | 1.2 | Reconstruct the assignment: pool requirement clues, write one shared user story and one open question for the client (Mission 1) | All, in pairs | S | core | A user story and a question are posted in the repo README or an issue |
-| 1.3 | Connect to GitHub over SSH: check for an existing key, add only the public key, test (Mission 3) | Each member | S | core | ssh -T git@github.com succeeds for every member |
 | 1.4 | Clone the repo, check the remote, map the monorepo folders (Mission 4) | Each member | S | core | Each member can name what lives in web, api, shared, db, tests and infra |
-| 1.5 | Protect main: pull request required, one approval required | Lead | XS | core | A direct push to main is rejected |
 | 1.6 | Onboarding PR: create onboarding/<handle>, add your contributor file, push, open a PR, review someone else's (Missions 5, 6) | Each member | S | core | Everyone has one merged PR and has reviewed one other PR |
 | 1.7 | Merge-conflict drill: two members edit the same line, agree on the intent, resolve and run tests | Pair | S | core | Conflict markers are gone, tests pass, both authors confirm the result |
 
@@ -142,7 +140,8 @@ The worker's search queries differ (public information only in all three):
 | 7.2 | Add the training secret as a GitHub Actions secret and use it in the workflow without printing it (Mission 27) | DevOps/CI | S | core | The run works, the log shows \*\*\* instead of the value, and no secret appears in the repo or in .env.example |
 | 7.3 | Make CI run the Milestone 6 tests against a Postgres service container | DevOps/CI | M | core | Integration tests pass in CI the same way they pass locally |
 | 7.4 | Repair the prepared failing pipeline: read the error, choose one cause, fix it, re-run (Mission 28) | Backend A | S | core | A fresh passing check for the corrected commit, and a two-line note on what the error message said |
-| 7.5 | Turn on required status checks and at least one approval for main, no direct pushes (extends the M1 protection) | Lead | S | core | A test PR with a red check cannot be merged, and the leader's own pushes are blocked too |
+| 1.5 | Protect main: pull request required, one approval required | Lead | XS | core | A direct push to main is rejected |
+| 7.5 | Turn on required status checks for main (extends the pull-request rule above) | Lead | S | core | A test PR with a red check cannot be merged, and the leader's own pushes are blocked too |
 | 7.6 | Merge-conflict drill: two people change the same lines, resolve it, keep both intents, re-run the tests | Backend B | M | core | The merge commit passes CI and the conflict markers are gone from every file |
 | 7.7 | Approve and merge with evidence: the assigned person checks the latest commit, the tests and open discussions, then merges (Mission 29) | QA | S | core | The merged PR shows a green check, one approval and no open discussions |
 | 7.8 | Sync after the merge: return to main, pull, delete the merged branch, confirm the change is local (Mission 30) | Everyone | XS | core | git log shows the merged work and no stale branches remain |
